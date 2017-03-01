@@ -178,9 +178,30 @@ ol.capped-cards {
     margin-right:-100px
 }
 .toc-select .select-menu-modal {
-    width:900px !important;   
+    width:900px !important;
 }
 .org-team-main {
     float: left;
     margin-left: 24px;
+}
+.header {
+    color: black;
+    background-color: #eee;
+}
+.header *, .header .header-search-scope, .header .header-search-wrapper.focus .header-search-scope, .header input {
+    color: #666;
+}
+.header a:hover, .header-nav-link:hover, .header-nav-link:focus {
+    color: black !important;
+}
+.header .form-control.header-search-wrapper {
+    background-color: white;
+    border: 1px solid gray;
+    color: black;
+}
+.header .header-search-input::-webkit-input-placeholder {
+    color: black;
+}
+.header-nav-link:hover .dropdown-caret, .header-nav-link:focus .dropdown-caret {
+    border-top-color: black;
 }

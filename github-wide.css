@@ -5,7 +5,7 @@
   padding-left: 45px !important;
   padding-right: 30px !important;
 }
-.container[style]{
+html.octotree-show .container {
   padding-left: 5px !important;
 }
 .container.repo-container {
@@ -184,24 +184,33 @@ ol.capped-cards {
     float: left;
     margin-left: 24px;
 }
-.header {
+.Header {
     color: black;
     background-color: #eee;
+    background-image: linear-gradient(-180deg, #fafafa 0%, #efefef 90%);
 }
-.header *, .header .header-search-scope, .header .header-search-wrapper.focus .header-search-scope, .header input {
+.Header *, .Header .header-search-scope, .Header .header-search-wrapper.focus .Header-search-scope, .Header input {
     color: #666;
 }
-.header a:hover, .header-nav-link:hover, .header-nav-link:focus {
+.Header div.d-flex.px-3.container-lg {
+    max-width: 9999999px;
+    padding-left: 48px !important;
+}
+html.octotree-show .Header div.d-flex.px-3.container-lg {
+    max-width: 9999999px;
+    padding-left: 10px !important;
+}
+.Header a:hover, .header-nav-link:hover, .header-nav-link:focus {
     color: black !important;
 }
-.header .form-control.header-search-wrapper {
+.Header .form-control.header-search-wrapper {
     background-color: white;
     border: 1px solid gray;
     color: black;
 }
-.header .header-search-input::-webkit-input-placeholder {
+.Header .header-search-input::-webkit-input-placeholder {
     color: black;
 }
-.header-nav-link:hover .dropdown-caret, .header-nav-link:focus .dropdown-caret {
+.Header-nav-link:hover .dropdown-caret, .header-nav-link:focus .dropdown-caret {
     border-top-color: black;
 }

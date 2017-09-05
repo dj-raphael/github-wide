@@ -214,3 +214,8 @@ html.octotree-show .Header div.d-flex.px-3.container-lg {
 .Header-nav-link:hover .dropdown-caret, .header-nav-link:focus .dropdown-caret {
     border-top-color: black;
 }
+.file-actions button.btn-octicon[aria-expanded] {
+    position:absolute;
+    left:-30px;
+    top:10px;
+}

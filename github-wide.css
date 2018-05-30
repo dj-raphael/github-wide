@@ -153,6 +153,7 @@ nav.reponav {
   margin-right: 10px !important;
   right: -10px;
   top: 60px;
+  padding-left:0 !important
 }
 a.reponav-item {
     display:block;
@@ -192,6 +193,9 @@ ol.capped-cards {
 .Header *, .Header .header-search-scope, .Header .header-search-wrapper.focus .Header-search-scope, .Header input {
     color: #666;
 }
+header div.HeaderMenu form > label > img.header-search-key-slash {
+    filter: invert(100%) contrast(200%) !important;
+}
 .Header div.d-flex.px-3.container-lg {
     max-width: 9999999px;
     padding-left: 48px !important;
@@ -218,4 +222,26 @@ html.octotree-show .Header div.d-flex.px-3.container-lg {
     position:absolute;
     left:-30px;
     top:10px;
+}
+a.muted-link[aria-label~="requesting"],a.muted-link[aria-label~="requesting"]:link  {
+    background-color:maroon;
+    color: white !important;
+    padding:0 5px;
+}
+a.muted-link[aria-label~="approval"] {
+    background-color:#28a745;
+    color: white !important;
+    padding:0 5px;
+}
+div > div.float-left.col-9.lh-condensed.p-2 > div > span.d-inline-block {
+    display: inline !important;
+}
+a.muted-link[aria-label~="approvals"] {
+    background-color:green;
+    color: white !important;
+    padding:0 5px;
+}
+div.org-repos.repo-list span.d-inline-block.tooltipped.tooltipped-s {
+    transform: scale(2,2);
+    right: 80px;
 }

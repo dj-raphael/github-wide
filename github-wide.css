@@ -1,185 +1,201 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 .container {
-  width: auto !important;
-  min-width: 980px !important;
-  padding-left: 45px !important;
-  padding-right: 30px !important;
+    width: auto !important;
+    min-width: 980px !important;
+    padding-left: 45px !important;
+    padding-right: 30px !important;
 }
 html.octotree-show .container {
-  padding-left: 5px !important;
+    padding-left: 5px !important;
 }
 .container.repo-container {
-  margin-right: 210px !important;
+    margin-right: 210px !important;
 }
 
-/* Repo Next layout */
 
+/* Repo Next layout */
 .repository-content {
-  width: 100% !important;
+    width: 100% !important;
 }
 
 .repository-with-sidebar {
-  padding-right: 60px !important;
+    padding-right: 60px !important;
 }
 
 .repository-with-sidebar .repository-sidebar {
-  margin-right: -60px !important;
+    margin-right: -60px !important;
 }
 
 .summary-stats,
 .authors-and-code {
-  display: table;
-  width: 100%;
+    display: table;
+    width: 100%;
 }
 
 .summary-stats li {
-  width: 25%;
+    width: 25%;
 }
 
 .authors-and-code .section {
-  width: 50%;
+    width: 50%;
 }
 
-/* Repo Next Code page */
 
+/* Repo Next Code page */
 .with-full-navigation {
-  padding-right: 190px !important;
+    padding-right: 190px !important;
 }
 
 .with-full-navigation .repository-sidebar {
-  margin-right: -190px !important;
+    margin-right: -190px !important;
 }
 
-/* Issues/PRs */
 
+/* Issues/PRs */
 .discussion-sidebar {
-  width: 220px !important;
+    width: 220px !important;
 }
 
 .discussion-timeline {
-  width: calc(100% - 240px) !important;
+    width: calc(100% - 240px) !important;
 }
+
 
 /* Fix #18 - props: @auscompgeek */
 .file-header::after {
-  clear: left !important;
+    clear: left !important;
 }
 
-/* New issues and Dashboard */
 
+/* New issues and Dashboard */
 #dashboard,
 .new-issue-form {
-  position: relative !important;
+    position: relative !important;
 }
 
 .dashboard-sidebar,
 .new-issue-form .discussion-sidebar {
-  position: absolute !important;
-  top: 0 !important;
-  right: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
 }
 
 button.discussion-sidebar-toggle {
-  width: 100% !important;
+    width: 100% !important;
 }
 
 .timeline-new-comment {
-  max-width: none !important;
+    max-width: none !important;
 }
+
 
 /* Dashboard */
-/* Note that this won't be needed if we actually flipped the DOM order around. */
 
+/* Note that this won't be needed if we actually flipped the DOM order around. */
 .news {
-  float: none !important;
-  margin-right: 360px !important;
+    float: none !important;
+    margin-right: 360px !important;
 }
 
-/* Settings */
-/* This should be refactored to use our grid.scss styles anyway, thus negating these styles. */
 
+/* Settings */
+
+/* This should be refactored to use our grid.scss styles anyway, thus negating these styles. */
 .settings-content,
 .repo-settings-content {
-  float: none !important;
-  width: auto !important;
-  overflow: auto !important; /* required to clear the floats that the float avoided */
+    float: none !important;
+    width: auto !important;
+    overflow: auto !important;
+    /* required to clear the floats that the float avoided */
 }
 .container > .settings-content,
 .repo-settings-content {
-  margin-left: 260px !important;
+    margin-left: 260px !important;
 }
 
 #repo-settings .menu-container {
-  width: 240px !important;
+    width: 240px !important;
 }
 
 #js-flash-container .flash-messages {
-  width: 100% !important;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+    width: 100% !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
 }
+
 
 /* Profile page */
 
 /* Profile avatar tooltip */
 .vcard-avatar {
-  width: 230px !important;
+    width: 230px !important;
 }
+
 
 /* Commits: extended message under "..." */
 .commit-desc pre {
-  max-width: none;
+    max-width: none;
 }
-.capped-card:nth-child(odd), .capped-card:nth-child(even) {
-    margin:10px;
+.capped-card:nth-child(odd),
+.capped-card:nth-child(even) {
+    margin: 10px;
 }
-.timeline-comment-wrapper, .discussion-item, .discussion-item+.discussion-item {
-    margin-top:0;
-    margin-bottom:3px;
-    padding-top:0
+.timeline-comment-wrapper,
+.discussion-item,
+.discussion-item + .discussion-item {
+    margin-top: 0;
+    margin-bottom: 3px;
+    padding-top: 0
 }
-.css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
+.css-truncate.css-truncate-target,
+.css-truncate .css-truncate-target {
     max-width: 90% !important;
 }
-.repository-content /* .repository-meta, .repository-content .overall-summary, .repository-content .repository-lang-stats-graph, .repository-content .file-navigation, .repository-content .commit-tease */
+.repository-content/* .repository-meta, .repository-content .overall-summary, .repository-content .repository-lang-stats-graph, .repository-content .file-navigation, .repository-content .commit-tease */
 {
     max-width: calc(100% - 210px) !important;
 }
-
+.pagehead .repohead-details-container {
+    margin-right: 210px
+}
 nav.reponav {
-  position: absolute !important;
-  width: 200px !important;
-  min-width: 200px !important;
-  margin-right: 10px !important;
-  right: -10px;
-  top: 60px;
-  padding-left:0 !important
+    position: absolute !important;
+    width: 200px !important;
+    min-width: 200px !important;
+    margin-right: 10px !important;
+    right: -10px;
+    top: 10px;
+    padding-left: 0 !important
 }
 a.reponav-item {
-    display:block;
-    width:100%;
-    border-width:1px 1px 1px 3px;
-    border-color:#e5e5e5 transparent #e5e5e5 #e5e5e5;
+    display: block;
+    width: 100%;
+    border-width: 1px 1px 1px 3px;
+    border-color: #e5e5e5 transparent #e5e5e5 #e5e5e5;
     background-color: white;
     border-radius: 5px 0 0 5px;
 }
-a.reponav-item.selected{
-    border-color:#e5e5e5 transparent #e5e5e5 #d26911;
+a.reponav-item.selected {
+    border-color: #e5e5e5 transparent #e5e5e5 #d26911;
     background-color: #fafafa;
 }
 #files {
-    margin-right:-230px;
+    margin-right: -230px;
 }
+#toc + #files {
+    margin-right: 0px;
+    margin-left: 30px;
+} 
 table.files td.content {
     width: auto !important;
     max-width: 10000px !important;
 }
 ol.capped-cards {
-    margin-left:-10px;
-    margin-right:-100px
+    margin-left: -10px;
+    margin-right: -100px
 }
 .toc-select .select-menu-modal {
-    width:900px !important;
+    width: 900px !important;
 }
 .org-team-main {
     float: left;
@@ -190,7 +206,10 @@ ol.capped-cards {
     background-color: #eee;
     background-image: linear-gradient(-180deg, #fafafa 0%, #efefef 90%);
 }
-.Header *, .Header .header-search-scope, .Header .header-search-wrapper.focus .Header-search-scope, .Header input {
+.Header *,
+.Header .header-search-scope,
+.Header .header-search-wrapper.focus .Header-search-scope,
+.Header input {
     color: #666;
 }
 header div.HeaderMenu form > label > img.header-search-key-slash {
@@ -204,8 +223,12 @@ html.octotree-show .Header div.d-flex.px-3.container-lg {
     max-width: 9999999px;
     padding-left: 10px !important;
 }
-.Header a:hover, .header-nav-link:hover, .header-nav-link:focus {
+.Header a:hover,
+.HeaderNavlink:hover,
+.HeaderNavlink:focus,
+.dropdown-caret {
     color: black !important;
+    border-top-color: black !important;
 }
 .Header .form-control.header-search-wrapper {
     background-color: white;
@@ -215,33 +238,41 @@ html.octotree-show .Header div.d-flex.px-3.container-lg {
 .Header .header-search-input::-webkit-input-placeholder {
     color: black;
 }
-.Header-nav-link:hover .dropdown-caret, .header-nav-link:focus .dropdown-caret {
-    border-top-color: black;
-}
 .file-actions button.btn-octicon[aria-expanded] {
-    position:absolute;
-    left:-30px;
-    top:10px;
+    position: absolute;
+    left: -30px;
+    top: 10px;
 }
-a.muted-link[aria-label~="requesting"],a.muted-link[aria-label~="requesting"]:link  {
-    background-color:maroon;
+a.muted-link[aria-label ~="requesting"],
+a.muted-link[aria-label ~="requesting"]:link {
+    background-color: maroon;
     color: white !important;
-    padding:0 5px;
+    padding: 0 5px;
 }
-a.muted-link[aria-label~="approval"] {
-    background-color:#28a745;
+a.muted-link[aria-label ~="approval"] {
+    background-color: #28a745;
     color: white !important;
-    padding:0 5px;
+    padding: 0 5px;
 }
 div > div.float-left.col-9.lh-condensed.p-2 > div > span.d-inline-block {
     display: inline !important;
 }
-a.muted-link[aria-label~="approvals"] {
-    background-color:green;
+a.muted-link[aria-label ~="approvals"] {
+    background-color: green;
     color: white !important;
-    padding:0 5px;
+    padding: 0 5px;
 }
 div.org-repos.repo-list span.d-inline-block.tooltipped.tooltipped-s {
-    transform: scale(2,2);
+    transform: scale(2, 2);
     right: 80px;
+}
+table.diff-table tr > td:nth-child(2), table.diff-table tr > td:nth-child(4) {
+    width:150%;
+}
+table.diff-table tr > td.blob-num {
+    width:1%;
+}
+.team-listing .nested-team-name {
+    width:90%;
+    max-width:none;
 }

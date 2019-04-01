@@ -1,7 +1,6 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 .container {
     width: auto !important;
-    min-width: 980px !important;
     padding-left: 45px !important;
     padding-right: 30px !important;
 }
@@ -201,41 +200,41 @@ ol.capped-cards {
     float: left;
     margin-left: 24px;
 }
-.Header {
+.Header-old {
     color: black;
     background-color: #eee;
     background-image: linear-gradient(-180deg, #fafafa 0%, #efefef 90%);
 }
-.Header *,
-.Header .header-search-scope,
-.Header .header-search-wrapper.focus .Header-search-scope,
-.Header input {
+.Header-old *,
+.Header-old .header-search-scope,
+.Header-old .header-search-wrapper.focus .Header-search-scope,
+.Header-old input {
     color: #666;
 }
 header div.HeaderMenu form > label > img.header-search-key-slash {
     filter: invert(100%) contrast(200%) !important;
 }
-.Header div.d-flex.px-3.container-lg {
+.Header-old div.d-flex.px-3.container-lg {
     max-width: 9999999px;
     padding-left: 48px !important;
 }
-html.octotree-show .Header div.d-flex.px-3.container-lg {
+html.octotree-show .Header-old div.d-flex.px-3.container-lg {
     max-width: 9999999px;
     padding-left: 10px !important;
 }
-.Header a:hover,
-.HeaderNavlink:hover,
-.HeaderNavlink:focus,
+.Header-old a:hover,
+.Header-link:hover,
+.Header-link:focus,
 .dropdown-caret {
     color: black !important;
     border-top-color: black !important;
 }
-.Header .form-control.header-search-wrapper {
+.Header-old .form-control.header-search-wrapper {
     background-color: white;
     border: 1px solid gray;
     color: black;
 }
-.Header .header-search-input::-webkit-input-placeholder {
+.Header-old .header-search-input::-webkit-input-placeholder {
     color: black;
 }
 .file-actions button.btn-octicon[aria-expanded] {

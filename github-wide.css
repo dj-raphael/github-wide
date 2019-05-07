@@ -1,6 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 .container {
     width: auto !important;
+    amin-width: 980px !important;
     padding-left: 45px !important;
     padding-right: 30px !important;
 }
@@ -200,36 +201,38 @@ ol.capped-cards {
     float: left;
     margin-left: 24px;
 }
-.Header-old {
+.Header {
     color: black;
     background-color: #eee;
     background-image: linear-gradient(-180deg, #fafafa 0%, #efefef 90%);
 }
-.Header-old *,
-.Header-old .header-search-scope,
-.Header-old .header-search-wrapper.focus .Header-search-scope,
-.Header-old input {
+.Header *,
+.Header .header-search-scope,
+.Header .header-search-wrapper.focus .Header-search-scope,
+.Header input {
     color: #666;
 }
 header div.HeaderMenu form > label > img.header-search-key-slash {
     filter: invert(100%) contrast(200%) !important;
 }
-.Header-old div.d-flex.px-3.container-lg {
+.Header div.d-flex.px-3.container-lg {
     max-width: 9999999px;
     padding-left: 48px !important;
 }
-html.octotree-show .Header-old div.d-flex.px-3.container-lg {
-    max-width: 9999999px;
-    padding-left: 10px !important;
-}
-.Header-old a:hover,
+
+.Header a:hover,
 .Header-link:hover,
 .Header-link:focus,
 .dropdown-caret {
     color: black !important;
     border-top-color: black !important;
 }
-.Header-old .form-control.header-search-wrapper {
+.Header a.dropdown-item:hover,
+.Header li.navigation-focus a div.jump-to-suggestion-name
+{
+    color: white !important;
+}
+.Header .form-control.header-search-wrapper {
     background-color: white;
     border: 1px solid gray;
     color: black;
@@ -274,4 +277,26 @@ table.diff-table tr > td.blob-num {
 .team-listing .nested-team-name {
     width:90%;
     max-width:none;
+}
+
+/* Octotree */
+.octotree-view-header {
+    color: black;
+    background-color: #eee;
+    background-image: linear-gradient(-180deg, #fafafa 0%, #efefef 90%);
+}
+html body .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .octotree-view-header .octotree-header-repo a,
+html body .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .octotree-view-header .octotree-header-repo a:hover,
+html body .octotree-sidebar.octotree-github-sidebar a.octotree-settings .octotree-icon-settings:hover::before,
+html body .octotree-sidebar.octotree-github-sidebar a.octotree-pin.octotree-pinned .octotree-icon-pin::before,
+html body .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .octotree-view-header .octotree-header-repo .octotree-icon-repo::before,
+html body .octotree-sidebar.octotree-github-sidebar .octotree-views .octotree-tree-view .octotree-view-header .octotree-header-branch .octotree-icon-branch::before,
+.octotree-view-header  * {
+    color: black !important
+}
+.octotree-footer {
+    display:none;
+}
+.octotree-sidebar.octotree-github-sidebar {
+    padding-bottom:0;
 }
